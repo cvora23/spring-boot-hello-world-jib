@@ -50,34 +50,24 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>${jib-maven-plugin.version}</version>
                 <configuration>
-                    <to>
-                        <image>registry.hub.docker.com/hellojib/hellojib:jib</image>
-                        <credHelper>osxkeychain</credHelper>
-                    </to>
-
                     <!--If you want custom base image and push registry, use below configuration replace above-->
-                    <!--<from>-->
-                        <!--<image>registry.hub.docker.com/openjdk:8-jdk-alpine</image>-->
-                        <!--<credHelper>osxkeychain</credHelper>-->
-                    <!--</from>-->
-                    <!--<to>-->
-                        <!--<image>registry.hub.docker.com/hellojib/hellojib:jib</image>-->
-                        <!--<credHelper>osxkeychain</credHelper>-->
-                    <!--</to>-->
-                    <!--<container>-->
-                        <!--<jvmFlags>-->
-                            <!--<jvmFlag>-Djava.security.egd=file:/dev/./urandom</jvmFlag>-->
-                            <!--<jvmFlag>-Xdebug</jvmFlag>-->
-                            <!--<jvmFlag>-Duser.timezone=GMT+08</jvmFlag>-->
-                        <!--</jvmFlags>-->
-                        <!--<mainClass>com.example.jib.JibApplication</mainClass>-->
-                        <!--<args>-->
-                            <!--<arg>some args</arg>-->
-                        <!--</args>-->
-                        <!--<ports>-->
-                            <!--<port>8080</port>-->
-                        <!--</ports>-->
-                    <!--</container>-->
+                    <from>
+                        <image>registry.hub.docker.com/openjdk:8-jdk-alpine</image>
+                    </from>
+                    <to>
+                        <image>lvthillo/my-app</image>
+                    </to>
+                    <container>
+                        <jvmFlags>
+                            <jvmFlag>-Djava.security.egd=file:/dev/./urandom</jvmFlag>
+                            <jvmFlag>-Xdebug</jvmFlag>
+                            <jvmFlag>-Duser.timezone=GMT+08</jvmFlag>
+                        </jvmFlags>
+                        <mainClass>com.example.jib.JibApplication</mainClass>
+                        <ports>
+                            <port>8080</port>
+                        </ports>
+                    </container>
                 </configuration>
             </plugin>
         </plugins>
