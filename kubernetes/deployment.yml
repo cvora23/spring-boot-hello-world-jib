@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-jib-pod
-          image: lvthillo/my-app
+          image: cvora/my-app
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
