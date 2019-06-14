@@ -1,6 +1,6 @@
 node {
     
-    Stage "Checking out source code !!!"
+    stage "Checking out source code !!!"
 
     checkout scm
     
