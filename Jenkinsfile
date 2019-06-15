@@ -10,7 +10,5 @@ node {
           sh 'cdr=$(pwd); $cdr/build.sh'
     }
 
-    sh('build.sh')
-
 }
     
