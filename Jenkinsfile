@@ -6,7 +6,7 @@ node {
 
     stage "Using Skaffold to build and deploy"
 
-    dir ('/var/jenkins_home/workspace/cvora-spring/') { 
+    dir ('/var/lib/jenkins/workspace/cvora-spring') { 
           sh 'cdr=$(pwd); $cdr/build.sh'
     }
 
