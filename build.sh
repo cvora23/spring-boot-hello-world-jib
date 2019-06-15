@@ -9,5 +9,5 @@ echo Printing Skaffold Version
 skaffold version
 
 echo Running Skaffold
-sudo skaffold run
+sudo -S skaffold run
 
