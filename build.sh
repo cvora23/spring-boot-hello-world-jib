@@ -9,4 +9,4 @@ echo Printing Skaffold Version
 skaffold version
 
 echo Running Skaffold
-sudo -u jenkins skaffold run
+sudo -u apnatimeayega skaffold run
