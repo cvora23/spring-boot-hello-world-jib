@@ -8,5 +8,6 @@ mvn -version
 echo Printing Skaffold Version
 skaffold version
 
-#skaffold run
+echo Running Skaffold
+skaffold run
 
