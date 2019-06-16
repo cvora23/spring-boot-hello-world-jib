@@ -1,4 +1,5 @@
 #!/bin/sh
 
-kubectl --kubeconfig /home/apnatimeayega/.kube/config get nodes
+export KUBECONFIG=/home/apnatimeayega/.kube/config
+kubectl get nodes
 
