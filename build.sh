@@ -8,5 +8,8 @@ mvn -version
 echo Printing Skaffold Version
 skaffold version
 
+echo Setting KUBECONFIG
+export KUBECONFIG=/home/apnatimeayega/.kube/config
+
 echo Running Skaffold
 sudo -u jenkins skaffold run
