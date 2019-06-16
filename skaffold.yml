@@ -10,7 +10,7 @@ build:
 # Use jibMaven
       jibMaven: {}
 # Execute deployment.yml
-deploy:
-  kubectl:
-    manifests:
-      - kubernetes/deployment.yml
+#deploy:
+#  kubectl:
+#    manifests:
+#      - kubernetes/deployment.yml
