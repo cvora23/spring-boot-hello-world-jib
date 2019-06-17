@@ -1,14 +1,14 @@
 apiVersion: skaffold/v1beta4
 kind: Config
 # Enforce SKaffold to use Jib
-build:
-  local:
-    push: false
+#build:
+#  local:
+#    push: false
 # Generated artifact
-  artifacts:
-    - image: cvora/my-app
+#  artifacts:
+#    - image: cvora/my-app
 # Use jibMaven
-      jibMaven: {}
+#      jibMaven: {}
 # Execute deployment.yml
 deploy:
   kubectl:
