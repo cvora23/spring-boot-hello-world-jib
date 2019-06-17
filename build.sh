@@ -8,5 +8,7 @@ mvn -version
 echo Printing Skaffold Version
 skaffold version
 
+eval $(minikube docker-env)
+
 echo Running Skaffold
 sudo -u jenkins skaffold run

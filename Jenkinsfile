@@ -8,7 +8,6 @@ node {
 
     dir ('/var/lib/jenkins/workspace/cvora-spring') { 
           sh 'cdr=$(pwd); $cdr/build.sh'
-	  //sh 'cdr=$(pwd); $cdr/kubernetes_test.sh'
     }
 
 }
