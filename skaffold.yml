@@ -8,7 +8,7 @@ build:
   artifacts:
     - image: cvora/my-app
 # Use jibMaven
-#      jibMaven: {}
+      jibMaven: {}
 # Execute deployment.yml
 deploy:
   kubectl:
