@@ -11,4 +11,5 @@ skaffold version
 eval $(minikube docker-env)
 
 echo Running Skaffold
-sudo -u jenkins skaffold run
+#sudo -u jenkins skaffold run
+skaffold run
