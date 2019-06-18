@@ -2,8 +2,11 @@ apiVersion: skaffold/v1beta4
 kind: Config
 # Enforce SKaffold to use Jib
 build:
-  local:
-    push: false
+  tagPolicy:
+    envTemplate:
+      template: "{{.IMAGE_NAME}}:latest"
+      #local:
+      #push: false
 # Generated artifact
   artifacts:
     - image: cvora/my-app
