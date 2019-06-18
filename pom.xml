@@ -56,7 +56,7 @@
                     </from>
                     <to>
                         <image>cvora/my-app</image>
-                    </to>
+		    </to>
                     <container>
                         <jvmFlags>
                             <jvmFlag>-Djava.security.egd=file:/dev/./urandom</jvmFlag>
