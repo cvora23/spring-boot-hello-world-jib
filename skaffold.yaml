@@ -3,10 +3,9 @@ kind: Config
 # Enforce SKaffold to use Jib
 build:
   tagPolicy:
-    envTemplate:
-      template: "{{.IMAGE_NAME}}:latest"
-      #local:
-      #push: false
+    sha256: {}
+  local:
+    push: false
 # Generated artifact
   artifacts:
     - image: cvora/my-app
