@@ -15,6 +15,6 @@ public class JibApplication {
 
     @RequestMapping("/")
     public String helloJib() {
-        return "Hello Chintan Vora!!!";
+        return "Hello Chintan Vora, How are you doing today ??!!!";
     }
 }
